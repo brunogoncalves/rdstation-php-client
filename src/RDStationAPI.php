@@ -15,7 +15,9 @@ class RDStationAPI
      */
     public function __construct($privateToken = NULL, $token = NULL)
     {
-        if (empty($privateToken)) throw new Exception("Inform RDStationAPI.privateToken as the first argument.");
+        if (empty($privateToken)) {
+            throw new Exception("Inform RDStationAPI.privateToken as the first argument.");
+        }
 
         $this->token = $token;
         $this->privateToken = $privateToken;
