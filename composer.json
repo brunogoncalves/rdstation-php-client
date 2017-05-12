@@ -1,0 +1,30 @@
+{
+    "name"       : "brunogoncalves/rdstation-php-client",
+    "description": "Api Cliente RD Station",
+    "license"    : "MIT",
+
+    "authors": [
+        {
+            "name" : "Bruno Gonçalves",
+            "email": "bugotech@gmail.com"
+        }
+    ],
+
+    "require": {
+        "php"          : ">=5.5.9",
+        "nesbot/carbon": "1.*"
+    },
+
+    "require-dev": {
+        "phpunit/phpunit": "4.8.*"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "RD\\": "src/"
+        }
+    },
+
+    "minimum-stability": "dev",
+    "prefer-stable"    : true
+}

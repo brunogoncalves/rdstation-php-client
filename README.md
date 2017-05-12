@@ -1,7 +1,15 @@
-#Usage
+# RD Station Client API PHP
+
+## Install
+```
+   composer require brunogoncalves/rdstation-php-client
+```
+
+## Usage
 ```php
-require("RDStationAPI.class.php");
-$rdAPI = new RDStationAPI("RD_PRIVATE_TOKEN", "RD_TOKEN");
+require '/vendor/autoload.php';
+
+$rdAPI = new \RD\RDStationAPI("RD_PRIVATE_TOKEN", "RD_TOKEN");
 
 //SEND NEW LEAD TO RD STATION
 $return1 = $rdAPI->sendNewLead("customer@customer.com", array(
@@ -30,3 +38,7 @@ $return4 = $rdAPI->updateLeadStatus("customer@customer.com", 'lost', 999.99, 'Lo
 //UPDATE LEAD FUNNEL STAGE AND OPPORTUNITY FLAG
 $return5 = $rdAPI->updateLeadStageAndOpportunity("customer@customer.com", 1, true);
 ```
+
+## License
+
+[The MIT License](/LICENSE)
